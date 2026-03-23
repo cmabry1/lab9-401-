@@ -46,33 +46,4 @@ high_earners(Amount, List) :-
         (employee(Name, _, _, Salary), Salary > Amount),
         List).
 
-% ============================================
-% ----------- SAMPLE QUERIES ------------------
-% ============================================
 
-% Query 1: Find all managers
-% ?- manager(X).
-% Expected:
-% X = john ;
-% X = lisa.
-
-% Query 2: List employees in IT department
-% ?- it_employee(X).
-% Expected:
-% X = susan ;
-% X = mike.
-
-% Query 3: Compare salaries
-% ?- higher_salary(paul, john).
-% Expected:
-% true.
-
-% Query 4: Same department
-% ?- same_department(susan, mike).
-% Expected:
-% true.
-
-% Query 5: High earners
-% ?- high_earners(80000, List).
-% Expected:
-% List = [susan, paul].
